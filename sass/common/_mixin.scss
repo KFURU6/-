@@ -1,0 +1,19 @@
+@use "./setting";
+
+@mixin pc() {
+    @media screen and (max-width: setting.$pc) {
+        @content;
+    }
+}
+
+@mixin tab() {
+    @media screen and (max-width: setting.$tab) {
+        @content;
+	}
+}
+
+@mixin sp() {
+    @media screen and (max-width: setting.$sp) {
+        @content;
+    }
+}

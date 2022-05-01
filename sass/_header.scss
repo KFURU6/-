@@ -1,0 +1,60 @@
+@use "../sass/common/setting";
+@use "../sass/common/mixin";
+
+/* header---------------------------- */
+.header-left {
+    float:left;
+    line-height: 60px;
+
+    @include mixin.sp() {
+        width: 100%;
+        text-align: center;
+      }
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header-right {
+    float: right;
+    line-height: 60px;
+
+    @include mixin.sp() {
+        width: 100%;
+      }
+}
+
+.header-nav-list {
+    @include mixin.sp() {
+        display: flex;
+        justify-content: space-between;
+      }
+}
+
+.nav-item {
+    float: left;
+    margin-right: 24px;
+
+    @include mixin.sp() {
+        margin-right: 0;
+      }
+}
+
+.nav-item a {
+    font-weight: bold;
+}
+
+.drawer-menu {
+    position: fixed;
+    display: none;
+}
+
+.drawer-menu-item {
+    background-color: #fff;
+    font-weight: bold;
+    padding: 5px;
+    border: solid 1px black;
+    border-radius: 20px;
+}

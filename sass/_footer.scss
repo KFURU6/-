@@ -1,0 +1,18 @@
+@use "../sass/common/setting";
+@use "../sass/common/mixin";
+
+/* footer---------------------------- */
+footer {
+    background-color: #082b48;
+    color: #fff;
+    padding: 20px;
+}
+
+.copyright {
+    float: right;
+    font-size: 12px;
+
+    @include mixin.sp() {
+        font-size: 10px;
+      }
+}
